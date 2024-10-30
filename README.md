@@ -6,6 +6,8 @@
 
 Este proyecto es un servidor Node.js que acepta webhooks de diferentes tipos de métodos HTTP (GET, POST, PATCH, etc.) y los almacena para visualización y análisis. La interfaz gráfica se implementa con Socket.io y Bootstrap para mostrar las peticiones recibidas en tiempo real.
 
+[img src="webhook.png"]
+
 ## Características
 
 - Acepta y maneja webhooks de diferentes métodos HTTP.
