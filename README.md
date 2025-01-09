@@ -25,3 +25,7 @@ Este proyecto es un servidor Node.js que acepta webhooks de diferentes tipos de 
 ## Agregar imagen a Docker
 ```
 docker -t webhook-listener .
+
+```
+
+Al instalar dentro de docker la imagen es necesito colocar el puerto de trabajo, por defecto colocar puerto 1994.
