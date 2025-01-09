@@ -25,4 +25,3 @@ Este proyecto es un servidor Node.js que acepta webhooks de diferentes tipos de 
 ## Agregar imagen a Docker
 ```
 docker -t webhook-listener .
-´´´
