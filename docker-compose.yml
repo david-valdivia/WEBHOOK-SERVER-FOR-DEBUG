@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  webhook-tester:
+    build: .
+    container_name: webhook-tester
+    ports:
+      - "1994:1994"
+    volumes:
+      - webhookdata:/app/data
+    restart: unless-stopped
+
+volumes:
+  webhookdata:
