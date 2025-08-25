@@ -28,14 +28,16 @@
         <div 
           v-for="endpoint in webhookStore.endpoints" 
           :key="endpoint.id"
-          class="endpoint-item group mx-2 rounded-lg hover:bg-gray-50 transition-all duration-200 cursor-pointer"
-          :class="{ active: webhookStore.activeEndpoint === endpoint.path }"
+          class="border-b endpoint-item group mx-2 hover:bg-gray-50 transition-all duration-200 cursor-pointer"
           @click="selectEndpoint(endpoint.path)"
         >
           <div class="flex items-center justify-between px-3 py-3">
             <div class="flex items-center flex-1 min-w-0">
               <div class="flex-shrink-0 mr-3">
-                <div class="w-2 h-2 rounded-full endpoint-indicator bg-gray-300"></div>
+                <div
+                    class="w-2 h-2 rounded-full endpoint-indicator bg-gray-300"
+                    :class="{ 'bg-green-400': webhookStore.activeEndpoint === endpoint.path }"
+                ></div>
               </div>
               <LinkIcon class="h-4 w-4 text-gray-400 mr-2 flex-shrink-0" />
               <div class="flex-1 min-w-0">
