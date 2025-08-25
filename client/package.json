@@ -1,0 +1,34 @@
+{
+  "name": "webhook-tester-client",
+  "version": "1.0.0",
+  "description": "Vue.js client for Webhook Testing Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@vueuse/core": "^10.7.0",
+    "axios": "^1.6.0",
+    "json-formatter-js": "^2.5.23",
+    "pinia": "^2.1.0",
+    "socket.io-client": "^4.7.2",
+    "sweetalert2": "^11.22.4",
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/compiler-sfc": "^3.4.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
+    "vite": "^5.0.0"
+  },
+  "type": "module"
+}

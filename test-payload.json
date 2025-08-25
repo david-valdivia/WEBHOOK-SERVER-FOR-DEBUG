@@ -1,0 +1,6 @@
+{
+  "response_type": "custom",
+  "status_code": 201,
+  "content_type": "application/json",
+  "body": "{\"success\": true, \"message\": \"Custom response works!\"}"
+}

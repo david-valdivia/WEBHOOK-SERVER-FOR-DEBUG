@@ -1,11 +1,15 @@
 {
   "name": "webhook-tester",
   "version": "1.0.0",
-  "description": "Aplicación para probar y depurar webhooks con endpoints dinámicos",
-  "main": "server.js",
+  "description": "Application for testing and debugging webhooks with dynamic endpoints",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "client:install": "cd client && npm install",
+    "build": "npm run client:build"
   },
   "keywords": [
     "webhook",
@@ -16,11 +20,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.11.0",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "socket.io": "^4.7.2",
-    "sqlite3": "^5.1.6",
-    "sqlite": "^5.0.1"
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
